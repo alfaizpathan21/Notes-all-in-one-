@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: rgb(147, 233, 233);
+            width: 40vw;
+            height: 80vh;
+
+        }
+
+        .box {
+            background-color: rgb(85, 187, 45);
+            width: 34px;
+            height: 45px;
+            animation-name: alfa;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+            transform: scale(4);
+        }
+
+        @keyframes alfa {
+            from {
+                transform: translateX(00px) ;
+                transform: rotatex(50deg) rotatey(50deg)rotatez(45deg);
+            
+            }
+
+            to {
+                transform: translateX(500px);
+              
+            }
+           
+        }
+
+        @keyframes aa {
+            0%{
+                background-color: aqua;
+                transform: rotate();
+            }
+            50%{
+                background-color: blueviolet;
+            }
+            100%{
+                background-color: bisque;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+
+</html>

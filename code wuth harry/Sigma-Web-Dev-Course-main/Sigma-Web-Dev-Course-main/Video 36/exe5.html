@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        nav {
+            position: fixed;
+            display: flex;
+            z-index: 1;
+        }
+
+        ul {
+            background-color: aqua;
+            width: 2000px;
+
+            height: 44px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;
+
+
+        }
+
+
+        .box {
+            border: 2px solid black;
+            margin-left: 22px;
+            width: 280px;
+            height: 250px;
+            padding: 10px;
+            position: relative;
+            background-color: blanchedalmond;
+
+        }
+        div.container{
+            display: flex;
+            background-color: beige;
+        }
+       image{
+        display: inline;
+        border-radius: 10px;
+       }
+        .logo{
+            position: fixed;
+            margin-left: 90%;
+            display: flex;
+            border: 10px solid black;
+            border-radius: 100px;
+            width: 40px;
+           margin-top: 250px
+           
+        }
+        .img{
+            object-fit: cover;
+        }
+
+        .box2{
+ 
+            background-color: aquamarine;
+            height: 500px;
+            border: 2px solid black;
+            margin-top: 5px;
+            border-radius: 10px;
+        margin: 20px;
+        }
+        footer{
+            
+            border: 3px solid red;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About </a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br>
+    <div class="container">
+    <div class="box">
+        <h1>this is box one</h1>
+    </div>
+    <div class="box">
+        <h1>this is box two</h1>
+    </div>
+</div>
+
+<div class="logo"><img  src="1.jpg"
+    width="42px" height="auto "   alt=""></div>
+<div class="box2">
+    <h1>box three</h1>
+</div>
+
+<footer>
+    <p>
+        this is footer block 
+    </p>
+</footer>
+</body>
+
+</html>

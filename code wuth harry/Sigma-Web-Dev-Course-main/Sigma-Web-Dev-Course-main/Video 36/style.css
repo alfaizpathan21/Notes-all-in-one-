@@ -1,0 +1,28 @@
+.box::first-line{
+    background-color: aquamarine;
+}
+.quote::before {
+    content: "“"; /* Opening quotation mark */
+    font-size: 200px;
+    color: rgb(170, 47, 47);
+  }
+ 
+  .box1 ::before{
+    content: "hi im alfaiz";
+    color: blue;
+    border: 2px solid black;
+  }
+  .box2::after{
+    content: "add after content ";
+    color: rgb(85, 2, 229);
+    border: 2px solid black;
+
+  }
+  .box2::first-letter{
+    color: red;
+
+  }
+  input::placeholder{
+    color: brown;
+    background-color: aquamarine;
+  }

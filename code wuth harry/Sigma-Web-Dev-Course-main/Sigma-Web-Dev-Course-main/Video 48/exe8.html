@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: blue;
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            overflow: hidden;
+
+        }
+
+        .box {
+            text-align: center;
+            background-color: red;
+            height: 70px;
+            width: 70px;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 0;
+
+            left: 0;
+            
+            animation: x 2s linear infinite alternate, y 1s ease-out infinite alternate;
+             
+
+        }
+
+        @keyframes x {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 87%;
+            }
+
+
+        }
+
+        @keyframes y {
+            from {
+
+                bottom: 0;
+            }
+
+            to {
+                bottom: 80%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+simle
+        </div>
+    </div>
+</body>
+
+</html>

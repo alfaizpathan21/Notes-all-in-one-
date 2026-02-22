@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Scientific Calculator</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  input, button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Scientific Calculator</h2>
+
+<input type="text" id="display" placeholder="Enter expression">
+<br>
+
+<!-- Basic operations -->
+<button onclick="append(' + ')">+</button>
+<button onclick="append(' - ')">-</button>
+<button onclick="append(' * ')">×</button>
+<button onclick="append(' / ')">÷</button>
+<button onclick="append(' ** ')">xʸ</button>
+<br>
+
+<!-- Scientific operations -->
+<button onclick="append('Math.sin(')">sin(</button>
+<button onclick="append('Math.cos(')">cos(</button>
+<button onclick="append('Math.tan(')">tan(</button>
+<button onclick="append('Math.sqrt(')">√</button>
+<button onclick="append('Math.log(')">ln</button>
+<button onclick="append('Math.exp(')">eˣ</button>
+<br>
+
+<button onclick="clearDisplay()">C</button>
+<button onclick="calculate()">=</button>
+
+<h3 id="result">Result: </h3>
+
+<script>
+function append(value) {
+  document.getElementById('display').value += value;
+}
+
+function clearDisplay() {
+  document.getElementById('display').value = '';
+  document.getElementById('result').innerText = 'Result:';
+}
+
+function calculate() {
+  const expr = document.getElementById('display').value;
+  let result;
+  try {
+    result = eval(expr);
+  } catch (err) {
+    result = 'Error';
+  }
+  document.getElementById('result').innerText = 'Result: ' + result;
+}
+</script>
+
+</body>
+</html>
